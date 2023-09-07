@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.log_in__form{
+    background-image: url(/form/assets/pexels-tuba-karabulut-18085210.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    width: 1300px;
+    margin: auto;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color: white;
+    padding-block: 50px;
+    padding-inline: 40px;
+    text-align: center;
+}
+
+.input__field{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+input{
+    padding: 10px 15px;
+    line-height: 25px;
+    width: 250px;
+    position: relative;
+    background: transparent;
+    border: 1px solid ;
+    outline: none;
+}
+
+input::-webkit-input-placeholder{
+    color: rgb(192, 3, 3);
+}
+
+.input__field p{
+    position: absolute;
+    left: 42.4%;
+    transition: 0.5s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+
+.input__field input:focus{
+    border: 1px solid rgb(3, 185, 3);
+    color: rgb(10, 165, 10);
+}
+
+.input__field input:focus ~ p{
+    color: rgb(6, 172, 6);
+    transform: translate(0px, -24.5px);
+    background-color: white;
+    border-left: 1px solid rgb(5, 168, 5);
+    border-right: 1px solid rgb(10, 143, 10);
+    padding: 0px 3px;
+    font-size: 15px;    
+}
+
+input:focus ~ p{
+    color: green;
+    transform: -20px 20px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.btn1{
+    background-color: rgb(12, 199, 12);
+}
+
+
+.btn1:hover{
+    background-color: rgb(10, 226, 10);
+}
+
+button:hover{
+    background-color: rgb(112, 88, 88);
+}
+
+button{
+    font-size: 16px;
+    line-height: 25px;
+    padding-block: 9px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(165, 168, 165);
+    border-radius: 3px;
+    color: white;
+}
+
